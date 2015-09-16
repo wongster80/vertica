@@ -1,0 +1,58 @@
+-- Creating NIC
+ CREATE NETWORK INTERFACE public_nic_1 ON v_dw_node0001 WITH '10.1.98.12';
+ CREATE NETWORK INTERFACE public_nic_2 ON v_dw_node0002 WITH '10.1.98.13';
+ CREATE NETWORK INTERFACE public_nic_3 ON v_dw_node0003 WITH '10.1.98.14';
+ CREATE NETWORK INTERFACE public_nic_4 ON v_dw_node0004 WITH '10.1.98.15';
+ CREATE NETWORK INTERFACE public_nic_5 ON v_dw_node0005 WITH '10.1.98.17';
+ CREATE NETWORK INTERFACE public_nic_6 ON v_dw_node0006 WITH '10.1.98.18';
+ CREATE NETWORK INTERFACE public_nic_7 ON v_dw_node0007 WITH '10.1.98.19';
+ CREATE NETWORK INTERFACE public_nic_8 ON v_dw_node0008 WITH '10.1.98.20';
+ CREATE NETWORK INTERFACE public_nic_9 ON v_dw_node0009 WITH '10.1.98.21';
+ CREATE NETWORK INTERFACE public_nic_10 ON v_dw_node0010 WITH '10.1.98.23';
+ CREATE NETWORK INTERFACE public_nic_11 ON v_dw_node0011 WITH '10.1.98.24';
+ CREATE NETWORK INTERFACE public_nic_12 ON v_dw_node0012 WITH '10.1.98.25';
+ CREATE NETWORK INTERFACE public_nic_13 ON v_dw_node0013 WITH '10.1.98.26';
+ CREATE NETWORK INTERFACE public_nic_14 ON v_dw_node0014 WITH '10.1.98.27';
+ CREATE NETWORK INTERFACE public_nic_15 ON v_dw_node0015 WITH '10.1.98.28';
+ CREATE NETWORK INTERFACE public_nic_16 ON v_dw_node0016 WITH '10.1.98.29';
+ CREATE NETWORK INTERFACE public_nic_17 ON v_dw_node0017 WITH '10.1.98.30';
+ CREATE NETWORK INTERFACE public_nic_18 ON v_dw_node0018 WITH '10.1.98.31';
+ CREATE NETWORK INTERFACE public_nic_19 ON v_dw_node0019 WITH '10.1.99.20';
+ CREATE NETWORK INTERFACE public_nic_20 ON v_dw_node0020 WITH '10.1.99.21';
+ CREATE NETWORK INTERFACE public_nic_21 ON v_dw_node0021 WITH '10.1.99.22';
+ CREATE NETWORK INTERFACE public_nic_22 ON v_dw_node0022 WITH '10.1.99.23';
+ CREATE NETWORK INTERFACE public_nic_23 ON v_dw_node0023 WITH '10.1.99.24';
+ CREATE NETWORK INTERFACE public_nic_24 ON v_dw_node0024 WITH '10.1.99.25';
+ CREATE NETWORK INTERFACE public_nic_25 ON v_dw_node0025 WITH '10.1.99.27';
+ CREATE NETWORK INTERFACE public_nic_26 ON v_dw_node0026 WITH '10.1.99.28';
+ CREATE NETWORK INTERFACE public_nic_27 ON v_dw_node0027 WITH '10.1.99.29';
+
+-- Setting the public NIC to export on
+ ALTER NODE v_dw_node0001 EXPORT ON public_nic_1;
+ ALTER NODE v_dw_node0002 EXPORT ON public_nic_2;
+ ALTER NODE v_dw_node0003 EXPORT ON public_nic_3;
+ ALTER NODE v_dw_node0004 EXPORT ON public_nic_4;
+ ALTER NODE v_dw_node0005 EXPORT ON public_nic_5;
+ ALTER NODE v_dw_node0006 EXPORT ON public_nic_6;
+ ALTER NODE v_dw_node0007 EXPORT ON public_nic_7;
+ ALTER NODE v_dw_node0008 EXPORT ON public_nic_8;
+ ALTER NODE v_dw_node0009 EXPORT ON public_nic_9;
+ ALTER NODE v_dw_node0010 EXPORT ON public_nic_10;
+ ALTER NODE v_dw_node0011 EXPORT ON public_nic_11;
+ ALTER NODE v_dw_node0012 EXPORT ON public_nic_12;
+ ALTER NODE v_dw_node0013 EXPORT ON public_nic_13;
+ ALTER NODE v_dw_node0014 EXPORT ON public_nic_14;
+ ALTER NODE v_dw_node0015 EXPORT ON public_nic_15;
+ ALTER NODE v_dw_node0016 EXPORT ON public_nic_16;
+ ALTER NODE v_dw_node0017 EXPORT ON public_nic_17;
+ ALTER NODE v_dw_node0018 EXPORT ON public_nic_18;
+ ALTER NODE v_dw_node0019 EXPORT ON public_nic_19;
+ ALTER NODE v_dw_node0020 EXPORT ON public_nic_20;
+ ALTER NODE v_dw_node0021 EXPORT ON public_nic_21;
+ ALTER NODE v_dw_node0022 EXPORT ON public_nic_22;
+ ALTER NODE v_dw_node0023 EXPORT ON public_nic_23;
+ ALTER NODE v_dw_node0024 EXPORT ON public_nic_24;
+ ALTER NODE v_dw_node0025 EXPORT ON public_nic_25;
+ ALTER NODE v_dw_node0026 EXPORT ON public_nic_26;
+ ALTER NODE v_dw_node0027 EXPORT ON public_nic_27;
+
