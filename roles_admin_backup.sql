@@ -15,3 +15,12 @@ SELECT 'GRANT ' || all_roles || ' TO ' || user_name || ';'
 FROM v_catalog.users
 WHERE user_name NOT IN ('dbadmin')
 ORDER BY 1;
+
+------------------------------------------------------------
+-- Add Roles to Roles
+------------------------------------------------------------
+SELECT '-- Add roles to roles';
+SELECT 'GRANT ' || all_roles || ' TO ' || user_name || ';'
+FROM v_catalog.users
+WHERE user_name NOT IN ('dbadmin')
+ORDER BY 1;
