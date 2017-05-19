@@ -1,0 +1,9 @@
+create user verticar identified by 'Rg0ladm1n';
+-- grant authentication v_ldap1 to pdsda;
+grant authentication v_trust_host3 to verticar;
+-- grant authentication v_ldap2 to pdsda;
+-- grant authentication v_trust_pdsda1 to pdsda;
+grant usage on resource pool adhoc_query to verticar;
+grant ypa_ro, stg_ro, map_ro, tmp_ro, ext_ro, pdsplatform_wo to verticar;
+alter user verticar resource pool adhoc_query;
+alter user verticar default role ypa_ro, stg_ro, map_ro, tmp_ro, ext_ro, pdsplatform_wo;

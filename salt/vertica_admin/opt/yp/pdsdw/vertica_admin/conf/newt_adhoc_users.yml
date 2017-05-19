@@ -1,0 +1,356 @@
+default: &DEFAULT
+   role:
+      - WebanalyticsDW_ro
+      - pdrstag_ro
+      - pdrmonitor_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+      - temp_wo
+   schema:
+   resource_pool:
+      - adhoc_query
+   authentication:
+      - v_ldap1
+      - v_ldap2
+thui:
+   <<: *DEFAULT
+abalsim:
+   <<: *DEFAULT
+xxia:
+   <<: *DEFAULT
+szavgorodni:
+   <<: *DEFAULT
+klee:
+   <<: *DEFAULT
+   role:
+      - ypc_bi_report_temp_ro
+      - ypc_bi_audit_ro
+      - WebanalyticsDW_ro
+      - csdw_etl_ro
+      - bi_sysinfo_ro
+      - pdrstag_ro
+      - pdrmonitor_ro
+      - pdrtemp_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - bi_logstore_ro
+      - wadw_stag_ro
+      - pdsqa_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+      - ypc_bi_report_ro
+      - ypa_ro
+      - stg_ro
+      - pdrtemp_wo
+      - tmp_ro
+      - tmp_wo
+jlemen:
+   <<: *DEFAULT
+   role:
+      - ypc_bi_report_temp_ro
+      - ypc_bi_audit_ro
+      - WebanalyticsDW_ro
+      - csdw_etl_ro
+      - bi_sysinfo_ro
+      - pdrstag_ro
+      - pdrmonitor_ro
+      - pdrtemp_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - bi_logstore_ro
+      - wadw_stag_ro
+      - pdsqa_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+pvenkatesan:
+   <<: *DEFAULT
+sshin:
+   <<: *DEFAULT
+jbdair:
+   <<: *DEFAULT
+vpatel:
+   <<: *DEFAULT
+khaq:
+   <<: *DEFAULT
+sv7104:
+   <<: *DEFAULT
+   role:
+      - ypc_bi_report_temp_ro
+      - ypc_bi_audit_ro
+      - WebanalyticsDW_ro
+      - csdw_etl_ro
+      - bi_sysinfo_ro
+      - pdrstag_ro
+      - pdrmonitor_ro
+      - pdrtemp_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - bi_logstore_ro
+      - wadw_stag_ro
+      - pdsqa_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+      - ypc_bi_report_ro
+      - ypa_ro
+      - stg_ro
+      - pdrtemp_wo
+      - tmp_ro
+      - tmp_wo
+      - pdsqa_wo
+ja9408:
+   <<: *DEFAULT
+   role:
+      - ypc_bi_report_temp_ro
+      - ypc_bi_audit_ro
+      - WebanalyticsDW_ro
+      - csdw_etl_ro
+      - bi_sysinfo_ro
+      - pdrstag_ro
+      - gridprod_ro
+      - pdrmonitor_ro
+      - pdrtemp_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - bi_logstore_ro
+      - wadw_stag_ro
+      - SEM_ro
+      - pdsqa_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+      - ypc_bi_report_ro
+      - pdrbackup_ro
+      - ypa_ro
+      - stg_ro
+      - pdrtemp_wo
+      - map_ro
+      - tmp_ro
+      - tmp_wo
+      - stg_wo
+      - edw_ro
+shong:
+   <<: *DEFAULT
+aw110f:
+   <<: *DEFAULT
+   resource_pool:
+      - adhoc_query
+   authentication: 
+      - v_gss_host
+      - v_trust_local
+      - v_ldap1
+      - v_ldap2
+jd5409:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+estetzler:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+clin:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+ny6877:
+   <<: *DEFAULT
+   role:
+      - all_schema_readonly
+ideck:
+   <<: *DEFAULT
+   role:
+      - all_schema_readonly
+ym154p:
+   <<: *DEFAULT
+   role:
+      - all_schema_readonly
+adasoar:
+   <<: *DEFAULT
+   role:
+      - all_schema_readonly
+kdaman:
+   <<: *DEFAULT
+   role:
+      - all_schema_readonly
+      - pdsplatform_ro
+ah5454:
+   <<: *DEFAULT
+ssharma:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+jbuslon:
+   <<: *DEFAULT
+pvijayvargiya:
+   <<: *DEFAULT
+   role:
+      - tmp_wo
+      - all_schema_readonly
+js4738:
+   <<: *DEFAULT
+   role:
+      - uat_ro
+wtheisinger:
+   <<: *DEFAULT
+vs7668:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+ia1521:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+jd1509:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+rp9686:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+glangewisch:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+ac6429:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - tmp_ro
+      - tmp_wo
+      - uat_ro
+gj870q:
+   <<: *DEFAULT
+ja5058:
+   <<: *DEFAULT
+mm9239:
+   <<: *DEFAULT
+jstooksberry:
+   <<: *DEFAULT
+jc2746:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+klin:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+jl2978:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+sswami:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+ps0301:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+      - all_schema_readonly
+jbrinker:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - stg_ro
+      - map_ro
+      - tmp_ro
+      - ext_ro
+      - pdsplatform_wo
+jp0600:
+   <<: *DEFAULT
+   role:
+      - pdsplatform_ro
+rs7644:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+ar4448:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+bmajeska:
+   <<: *DEFAULT
+rd0878:
+   <<: *DEFAULT
+   role:
+      - ypa_ro
+      - uat_ro
+sjain:
+   <<: *DEFAULT
+   role:
+      - pdsplatform_ro
+mk5600:
+   <<: *DEFAULT
+   role:
+      - pdsplatform_ro
+cp8630:
+   <<: *DEFAULT
+   role:
+      - pdsplatform_ro
+mf2342:
+   <<: *DEFAULT
+   authentication:
+      - v_ldap2
+sc2495:
+   <<: *DEFAULT
+   authentication:
+      - v_ldap2
+sb3242:
+   <<: *DEFAULT
+ai7115:
+   <<: *DEFAULT

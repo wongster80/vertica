@@ -1,0 +1,23 @@
+MAILTO=""
+SHELL=/bin/bash
+BASH_ENV="~/.bashrc"
+# CRONTAB FORMAT
+#* * * * * user command 
+#- - - - -
+#| | | | |
+#| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+#| | | ------- Month (1 - 12)
+#| | --------- Day of month (1 - 31)
+#| ----------- Hour (0 - 23)
+#------------- Minute (0 - 59)
+
+# Run configuration backup of Vertica clusters
+00 09 * * * pdsauto /usr/bin/python26 /opt/yp/pdsdw/vertica_admin/bin/vertica_backup_configs.py -C newt > /dev/null 2>&1
+00 09 * * * pdsauto /usr/bin/python26 /opt/yp/pdsdw/vertica_admin/bin/vertica_backup_configs.py -C newton > /dev/null 2>&1
+00 09 * * * pdsauto /usr/bin/python26 /opt/yp/pdsdw/vertica_admin/bin/vertica_backup_configs.py -C qe > /dev/null 2>&1
+00 09 * * * pdsauto /usr/bin/python26 /opt/yp/pdsdw/vertica_admin/bin/vertica_backup_configs.py -C stage > /dev/null 2>&1
+00 09 * * * pdsauto /usr/bin/python26 /opt/yp/pdsdw/vertica_admin/bin/vertica_backup_configs.py -C prod > /dev/null 2>&1
+
+# Commit changes of backup to Stash
+30 09 * * * pdsauto /opt/yp/pdsdw/vertica_admin/bin/vertica-backup-commit.sh > /dev/null 2>&1
+

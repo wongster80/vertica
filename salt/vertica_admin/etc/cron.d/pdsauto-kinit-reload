@@ -1,0 +1,6 @@
+MAILTO=""
+{% if grains['osmajorrelease'][0] == '5' %}
+0 */3 * * * pdsauto /bin/sh -c '/usr/kerberos/bin/kinit pdsauto@CORP.YP.COM -k -t /home/pdsauto/.keytab'
+{% elif grains['osmajorrelease'][0] == '6' %}
+0 */3 * * * pdsauto /bin/sh -c '/usr/bin/kinit pdsauto@CORP.YP.COM -k -t /home/pdsauto/.keytab'
+{% endif %}

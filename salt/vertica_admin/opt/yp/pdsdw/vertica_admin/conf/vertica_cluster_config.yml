@@ -1,0 +1,52 @@
+default: &defaults
+  app_root: /opt/yp/pdsdw/vertica_admin
+  vsql: /opt/vertica/bin/vsql
+  vertica_user: pdsauto
+  vertica_password: dummy
+newton:
+  <<: *defaults
+  vertica_vip: prod-vert.v.int.ev1.yp.com
+  vertica_host: vert-prod-node1.ev1.yellowpages.com
+  vertica_cluster: Vertica_Newton
+  vertica_user: pdsauto
+  vertica_password: dummy
+  ganglia_url: 'http://hd-prod-gmetad.ev1.yellowpages.com/?c=Vertica_Cluster_Prod&m=load_one&r=hour&s=by%20name&hc=4&mc=2'
+newt:
+  <<: *defaults
+  vertica_vip: dev-vert.v.int.ev1.yp.com
+  vertica_host: vert-dev-node6.ev1.yellowpages.com
+  vertica_cluster: Vertica_Newt
+  vertica_user: pdsauto
+  vertica_password: dummy
+prod:
+  <<: *defaults
+  vertica_vip: vert.v.int.ev1.yp.com
+  vertica_host: vert6.ev1.yellowpages.com
+  vertica_cluster: Vertica40
+  ganglia_url: 'http://hd-prod-gmetad.ev1.yellowpages.com/?c=Vertica_Cluster_Prod&m=load_one&r=hour&s=by%20name&hc=4&mc=2'
+stage:
+  <<: *defaults
+  vertica_vip: vertica.v.int.ev1.yp.com
+  vertica_host: vertica6.ev1.yellowpages.com
+  vertica_cluster: Vertica20
+  ganglia_url: 'http://hd-prod-gmetad.ev1.yellowpages.com/?c=Vertica_Cluster_Prod20&m=load_one&r=hour&s=by%20name&hc=4&mc=2'
+sandbox:
+  <<: *defaults
+  vertica_vip: test-vertica.v.int.wc1.yp.com
+  vertica_cluster: Vertica10-Sandbox
+  vertica_user: vertica-dev
+  vertica_password: dummy
+qe:
+  <<: *defaults
+  vertica_vip: qe-vert.v.int.ev1.yp.com
+  vertica_host: vert-qe-node1.ev1.yellowpages.com
+  vertica_cluster: Vertica10-QE
+  vertica_user: pdsauto
+  vertica_password: dummy
+ext:
+  <<: *defaults
+  vertica_vip: vert-ext.v.int.ev1.yp.com
+  vertica_host: vert-ext-node1.ev1.yellowpages.com
+  vertica_cluster: Vertica_Newt
+  vertica_user: pdsauto
+  vertica_password: dummy

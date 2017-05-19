@@ -1,0 +1,12 @@
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:1: ROLLBACK 4005:  Must be superuser to create users
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:2: ROLLBACK 4123:  No user or role "usertest1" exists
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:3: ROLLBACK 5360:  User "usertest1" does not exist
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:4: ROLLBACK 4123:  No user or role "usertest1" exists
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:5: ROLLBACK 4123:  No user or role "usertest1" exists
+vsql:/home/aw110f/stash/saltstack-states/vertica/vertica_admin/opt/yp/pdsdw/vertica_admin/sql/test_create_users.sql:6: ROLLBACK 3994:  Must be superuser to alter user default roles
+CREATE USER
+GRANT PRIVILEGE
+ALTER USER
+GRANT AUTHENTICATION
+GRANT ROLE
+ALTER USER

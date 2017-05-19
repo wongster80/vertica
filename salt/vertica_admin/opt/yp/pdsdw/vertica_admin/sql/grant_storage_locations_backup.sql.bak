@@ -1,0 +1,12 @@
+--- INCOMPLETE - SQL TO REDO
+------------------------------------------------------------
+-- Grant storage locations to role/users
+------------------------------------------------------------
+SELECT '-- Grant storage locations to role/users';
+SELECT 'GRANT ' || grants.privileges_description || ' ON LOCATION ' || storage_locations.location_path  || ' TO ' || grants.grantee ||  ';'
+FROM grants
+JOIN storage_locations ON 
+WHERE grants.object_type = 'STORAGELOCATION' AND LOCATION_USAGE = 'USER'
+AND privileges_description !~ '\*'
+-- AND grantee != 'vertica'
+ORDER BY grants.privileges_description;

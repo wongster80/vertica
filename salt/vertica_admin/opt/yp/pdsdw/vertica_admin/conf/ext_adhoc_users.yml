@@ -1,0 +1,18 @@
+default: &DEFAULT
+   role:
+      - WebanalyticsDW_ro
+      - pdrstag_ro
+      - pdrmonitor_ro
+      - pdrextracts_ro
+      - csdw_stag_ro
+      - csdw_ro
+      - pdrmapping_ro
+      - WebAnalyticsDWng_ro
+      - WebAnalyticsDWng_Dim_ro
+      - temp_wo
+   schema:
+   resource_pool:
+      - adhoc_query
+   authentication:
+      - v_ldap1
+      - v_ldap2
